@@ -1,69 +1,61 @@
-node /tmp/0Ap4MD5AI2.js
-LOOPING PERTAMA
-2 Ilham Ganteng Banget
-4 Ilham Ganteng Banget
-6 Ilham Ganteng Banget
-8 Ilham Ganteng Banget
-10 Ilham Ganteng Banget
-12 Ilham Ganteng Banget
-14 Ilham Ganteng Banget
-16 Ilham Ganteng Banget
-18 Ilham Ganteng Banget
-20 Ilham Ganteng Banget
+console.log("LOOPING PERTAMA");
 
-LOOPING KEDUA
-20 Aku ingin jadi bajak laut
-18 Aku ingin jadi bajak laut
-16 Aku ingin jadi bajak laut
-14 Aku ingin jadi bajak laut
-12 Aku ingin jadi bajak laut
-10 Aku ingin jadi bajak laut
-8 Aku ingin jadi bajak laut
-6 Aku ingin jadi bajak laut
-4 Aku ingin jadi bajak laut
-2 Aku ingin jadi bajak laut
+for (let counter = 2; counter < 22; counter += 2) {
+  document.write(counter + ' - Ilham Ganteng Banget<br>');
+}
 
-Looping For
-1 INI ADALAH ANGKA GANJIL (1)
-2 INI ADALAH ANGKA GENAP (2)
-3 INI KELIPATAN 3
-4 INI ADALAH ANGKA GENAP (4)
-5 INI ADALAH ANGKA GANJIL (5)
-6 INI KELIPATAN 3
-7 INI ADALAH ANGKA GANJIL (7)
-8 INI ADALAH ANGKA GENAP (8)
-9 INI KELIPATAN 3
-10 INI ADALAH ANGKA GENAP (10)
-11 INI ADALAH ANGKA GANJIL (11)
-12 INI KELIPATAN 3
-13 INI ADALAH ANGKA GANJIL (13)
-14 INI ADALAH ANGKA GENAP (14)
-15 INI KELIPATAN 3
-16 INI ADALAH ANGKA GENAP (16)
-17 INI ADALAH ANGKA GANJIL (17)
-18 INI KELIPATAN 3
-19 INI ADALAH ANGKA GANJIL (19)
-20 INI ADALAH ANGKA GENAP (20)
+console.log("LOOPING KEDUA");
 
-Looping #
-#
-##
-###
-####
-Looping # Ngajejer
-#
-##
-###
-####
-#####
+for (let counter = 20; counter > 0; counter -= 2) {
+  document.write(counter + ' - Aku ingin jadi bajak laut<br>');
+}
 
-Looping #
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
-# # # #
+console.log();
 
+console.log("Looping For");
+
+for (let angka = 1; angka <= 20; angka++) {
+  if (angka % 3 === 0) {
+    console.log(`${angka} - INI KELIPATAN 3`);
+  } else {
+    if (angka % 2 === 0) {
+      console.log(`${angka} - INI ADALAH ANGKA GENAP (${angka})`);
+    } else {
+      console.log(`${angka} - INI ADALAH ANGKA GANJIL (${angka})`);
+    }
+  }
+}
+
+console.log();
+
+console.log("Looping #");
+
+let text = "";
+
+for (let i = 0; i < 4; i++) {
+  text += "#";
+  console.log(text);
+}
+
+console.log("Looping # Ngajejer");
+
+let s = "";
+
+for (let i = 0; i < 5; i++) {
+  for (let j = 0; j <= i; j++) {
+    s += "#";
+  }
+  s += "\n";
+}
+
+console.log(s);
+
+console.log("Looping #");
+
+let ashiap = "";
+
+for (let i = 0; i < 8; i++) {
+  ashiap += "# # # #\n";
+}
+
+console.log(ashiap);
