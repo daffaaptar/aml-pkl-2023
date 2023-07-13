@@ -1,7 +1,7 @@
-let x = 10;
+let x = prompt('Masukan Angka:');
 
-if (x > 5) {
-  console.log("x lebih besar dari 5");
-} else {
-  console.log("x tidak lebih besar dari 5");
+if (x % 2 == 0) {
+  console.log(x + ' Adalah bilangan genap');
+} else { (x % 3 == 0) 
+  console.log(x +' Adalah bilangan ganjil');
 }
